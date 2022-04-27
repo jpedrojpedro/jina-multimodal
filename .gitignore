@@ -1,0 +1,10 @@
+# temporarily ignored
+app/
+*.yml
+Dockerfile
+
+# Pipfile
+Pipfile.lock
+
+# PyCharm
+.idea/
