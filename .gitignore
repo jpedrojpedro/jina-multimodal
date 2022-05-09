@@ -1,10 +1,23 @@
-# temporarily ignored
-app/
-*.yml
-Dockerfile
-
 # Pipfile
 Pipfile.lock
 
 # PyCharm
 .idea/
+
+# Examples
+app/demo-chatbot/*
+!app/demo-chatbot/README.md
+!app/demo-chatbot/Makefile
+app/demo-fashion/*
+!app/demo-fashion/README.md
+!app/demo-fashion/Makefile
+app/demo-multimodal/*
+!app/demo-multimodal/README.md
+!app/demo-multimodal/Makefile
+app/index-search-images/imgs/*.jpg
+
+# Temporarily ignores
+app/multimodal
+
+# MacOS
+.DS_Store
