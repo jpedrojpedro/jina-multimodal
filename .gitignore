@@ -1,3 +1,11 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
 # Pipfile
 Pipfile.lock
 
@@ -16,8 +24,16 @@ app/demo-multimodal/*
 !app/demo-multimodal/Makefile
 app/index-search-images/imgs/*.jpg
 
-# Temporarily ignores
-app/multimodal
+# multimodal
+app/multimodal/DocVectorIndexer
+app/multimodal/KeyValueIndexer
+app/multimodal/input/*
+!app/multimodal/input/.keep
+app/multimodal/multimodal
+app/multimodal/sql/*
+!app/multimodal/sql/.keep
+app/multimodal/images/*
+!app/multimodal/images/.keep
 
 # MacOS
 .DS_Store
