@@ -34,6 +34,7 @@ app/multimodal/sql/*
 !app/multimodal/sql/.keep
 app/multimodal/images/*
 !app/multimodal/images/.keep
+app/bkp-multimodal
 
 # MacOS
 .DS_Store
