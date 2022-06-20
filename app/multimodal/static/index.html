@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>
-        Jina Multimodal Hello World!
-    </title>
+    <title>Jina AI Multimodal</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
@@ -15,7 +13,7 @@
             <a class="navbar-brand" href="#">
                 <img src="https://api.jina.ai/logo/logo-product/jina-core/logo-only/colored/Product%20logo_Core_Colorful%401x.png"
                      width="32px" class="d-inline-block align-top">
-                Jina Multimodal Hello-World
+                {{ title }}
             </a>
             <form class="form-inline my-2 my-lg-0">
                 <input v-model="serverAddress" class="form-control mr-sm-2" type="search" placeholder="server address"
@@ -112,6 +110,7 @@
             return v.toString(16);
         });
     }
+    const title = "Jina AI Multimodal - case OLX Electronics and Smartphones"
     const urlParams = new URLSearchParams(window.location.search);
     const port = urlParams.get('port') ?? 8080;
     var app = new Vue({
@@ -120,7 +119,8 @@
             modalWeight: 50,
             query: null,
             results: [],
-            serverAddress: `http://localhost:${port}`
+            serverAddress: `http://localhost:${port}`,
+            title: title
         },
         mounted: function () {
             this.$nextTick(function () {
