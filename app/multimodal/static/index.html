@@ -86,7 +86,7 @@
                     <img :src="item.uri" class="card-img-top"
                          style="max-height: 200px; object-fit: contain;">
                     <div class="card-body">
-                        {{item.tags.caption}}
+                        {{item.tags.caption.length > 256 ? `${item.tags.caption.substring(0, 256)}...` : item.tags.caption}}
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">score: {{item.scores.relevance.value}}</li>
